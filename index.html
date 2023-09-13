@@ -5,82 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/navBar.css">
+    <link rel="stylesheet" href="/styles/dark-mode.css">
+    <link rel="stylesheet" href="/styles/blobs.css">
     <script defer src="/src/navBar.js"></script>
+    <script defer src="/src/darkMode.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Alexanders web solutions</title>
 </head>
-<body>
-<header>
-    <nav>
-        <div class="topnav">
-            <a href="#home" class="active">ME.dev</a>
-            <div id="myLinks">
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+<body class="magicpattern">
+    <header>
+        <nav>
+            <div class="topnav">
+                <a href="#home" class="active">ALEXANDER.dev</a>
+                <div id="myLinks">
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+        </nav>
+        <div class="dark-mode-toggle">
+            <a href="javascript:void(0);" onClick="darkModeBody()" class="dark-mode-box"><img
+                    src="assets/svgs/sunny_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="dark-mode-icon" class="dark-mode-icon">
+                <p id="dark-mode-theme-text" onClick="themeText()">Dark Mode</p></a>
         </div>
-    </nav>
-</header>
-<main>
-    <div class="box">
-        <h3>Contact Me</h3>
-        <p>Get in touch for a quotation on your website today!.</p>
-        <a href="https://github.com/kagerer19">Read more</a>
-    </div>
-    <div class="short">
-        <h3>A note about style</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
-        <a href="https://github.com/kagerer19">Read more</a>
-    </div>
-    <div class="tall box-tall">
-        <img src="assets/1.jpg" alt="model">
-    </div>
-    <div class="short">
-        <h3>A note about style</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
-        <a href="https://github.com/kagerer19">Read more</a>
-    </div>
-    <div class="tall">
-        <img src="assets/1.jpg" alt="model">
-    </div>
-    <div class="tall">
-        <img src="assets/1.jpg" alt="model">
-    </div>
-    <div class="tall">
-        <h3>A note about style</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas perspiciatis natus sit dicta repellendus quia
-            mollitia. Voluptas ullam ipsa dolorem.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse accusamus possimus asperiores fugiat at
-            nostrum odio repellendus voluptates. Iusto asperiores voluptate similique maiores ut omnis dolores corporis,
-            tenetur excepturi quis?</p>
-        <a href="">Read more</a>
-    </div>
-    <div class="tall">
-        <img src="assets/1.jpg" alt="model">
-    </div>
-    <div class="short">
-        <h3>A note about style</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
-        <a href="https://github.com/kagerer19">Read more</a>
-    </div>
-    <div class="short">
-        <h3>A note about style</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
-        <a href="https://github.com/kagerer19">Read more</a>
-    </div>
-    <div class="tall">
-        <img src="assets/1.jpg" alt="model">
-    </div>
-    <div class="short">
-        <h3>A note about style</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
-        <a href="https://github.com/kagerer19">Read more</a>
-    </div>
-</main>
+    </header>
+    <main>
+        <div class="box">
+            <h3>Contact Me</h3>
+            <p>Get in touch for a quotation on your website today!.</p>
+            <a href="https://github.com/kagerer19">Read more</a>
+        </div>
+        <div class="short">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
+            <a href="https://github.com/kagerer19">Read more</a>
+        </div>
+        <div class="tall box-tall">
+            <img class="img-blur"  src="assets/5.jpg" alt="model">
+        </div>
+        <div class="short">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
+            <a href="https://github.com/kagerer19">Read more</a>
+        </div>
+        <div class="tall">
+            <img src="assets/1.jpg" alt="model">
+        </div>
+        <div class="tall">
+            <img src="assets/4.jpg" alt="model">
+        </div>
+        <div class="tall">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas perspiciatis natus sit dicta repellendus
+                quia
+                mollitia. Voluptas ullam ipsa dolorem.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse accusamus possimus asperiores fugiat at
+                nostrum odio repellendus voluptates. Iusto asperiores voluptate similique maiores ut omnis dolores
+                corporis,
+                tenetur excepturi quis?</p>
+            <a href="">Read more</a>
+        </div>
+        <div class="tall">
+            <img src="assets/6.jpg" alt="model">
+        </div>
+        <div class="short">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
+            <a href="https://github.com/kagerer19">Read more</a>
+        </div>
+        <div class="short">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
+            <a href="https://github.com/kagerer19">Read more</a>
+        </div>
+        <div class="tall">
+            <img class="img-grey" src="assets/3.jpg" alt="model">
+        </div>
+        <div class="short">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
+            <a href="https://github.com/kagerer19">Read more</a>
+        </div>
+    </main>
 </body>
 </html>
