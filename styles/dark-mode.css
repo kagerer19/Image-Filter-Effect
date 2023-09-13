@@ -1,0 +1,22 @@
+.darkModeBody {
+    background: var(--secondary-text-color);
+    color: var(--text-color-white);
+}
+
+.dark-mode-toggle {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
+    gap: 3px;
+}
+
+
+.dark-mode-box {
+    align-items: center;
+    display: flex;
+    gap: 0.5em;
+}
+
+.dark-mode-box {
+    text-decoration: none;
+}

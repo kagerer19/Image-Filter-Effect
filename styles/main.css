@@ -3,7 +3,7 @@
 :root {
     --primary-text-color: #F3EFE0;
     --secondary-text-color: #000000;
-    ---text-color-white: #c0c0c0;
+    --text-color-white: #c0c0c0;
     --primary-font: 'Outfit', sans-serif;
 }
 
@@ -11,6 +11,11 @@ body {
     margin: 0;
     font-family: "Poppins";
     background: #f7f7f7;
+}
+
+.darkModeBody {
+    background: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
 
 main {
@@ -44,8 +49,12 @@ main .tall {
     grid-row: span 2;
 }
 
-a::before {
-    list-style: bold;
+a {
+    text-decoration: none;
+}
+
+.img-grey {
+    filter: grayscale(100%);
 }
 
 
@@ -61,8 +70,6 @@ a::before {
 /* ...and then apply it: */
 .box, .box-tall {
     animation: slide-in 2000ms;
-    background: var(---text-color-white);
-    border: var(---text-color-white);
     padding: 5px;
     text-align: center;
 }
@@ -70,6 +77,10 @@ a::before {
 .box-tall {
     border: 16px solid #fff;
     background: #fff;
+}
+
+.img-blur {
+    filter: blur(1px);
 }
 
 
